@@ -103,7 +103,7 @@ a.navbar-item:hover,a.navbar-link:hover {
 }
 
 .navbar-dropdown{
-    background-color: goldenrod;
+    background-color: #0e1729;
     border: none;
 }
 
@@ -117,12 +117,17 @@ a.navbar-item:hover,a.navbar-link:hover {
 
 .is-active{
 	color: goldenrod !important;
-}new
+}
 
 .navbar-menu.is-active{
     background: goldenrod !important;
     font-size: 1.5rem;
 }
+
+.navbar-dropdown .navbar-item.is-active{
+	color: red !important;
+}
+
 
 .navbar-burger:hover, .navbar-burger:active{
     background-color: goldenrod;
