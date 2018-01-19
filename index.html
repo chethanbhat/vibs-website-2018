@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,18 @@
 	<!-- Bulma -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-	<link rel="stylesheet" href="stylesheets/style.css?v1">
+	
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+	<link rel="stylesheet" href="stylesheets/main.css">
+	<style>
 
     </style>
 </head>
 <body>
+		<main>
 
-		<div class="wrapper">
-		
-		<div class="header" id="home">
+		<header class="main-header">
 				<!-- Bulma Navigation -->
 				<nav class="container navbar is-transparent is-fixed-top navbar-transparent" id="main-nav" role="navigation" aria-label="main navigation">
 						<div class="navbar-brand">
@@ -88,9 +88,9 @@
 						</div>
 		
 			</div>  <!-- Jumbo -->
-		</div> <!-- Header -->
+		</header> <!-- Header -->
 
-		 <div class="main-content">
+		 <section class="main-content">
 
 			<section id="solutionsSection" >
 				<h2 class="sectionTitle">Our Solutions</h2>
@@ -202,13 +202,10 @@
 					</div> 
 				</div>
 			</section> 
-		</div> <!-- Content -->
+		 </section> <!-- Content -->
 
-		<footer>
-				<div class="flex-footer">
-					<div class="footer-section footer-logo">
-						<img src="images/logo/logo-vibs-white-200.png" alt="Vijaya Innovative Business Solutions">
-					</div>
+		 <footer>  
+				<nav class="flex-footer">
 					<div class="footer-section footer-main-links">
 						<h3>VIBS</h3>
 						<ul>
@@ -243,19 +240,22 @@
 					<div class="footer-section footer-marketing-links">
 						<h3>Digital Marketing</h3>
 						<ul>
-							<li><a href="#">Digital Strategy</a></li>
-							<li><a href="#">SEO</a></li>
-							<li><a href="#">Social Media Marketing</a></li>
-							<li><a href="#">PPC Ads</a></li>
-							<li><a href="#">Email Marketing</a></li>
+							<li><a href="">Digital Strategy</a></li>
+							<li><a href="">SEO</a></li>
+							<li><a href="">Social Media Marketing</a></li>
+							<li><a href="">PPC Ads</a></li>
+							<li><a href="">Email Marketing</a></li>
 						</ul>
 					</div>
-				</div>
+                </nav>
+                <div class="footer-logo">
+						<img src="images/logo/logo-vibs-white-200.png" alt="Vijaya Innovative Business Solutions">
+                </div>
 				<p class="copyright">-- Copyright © 2018 VIBS, Mangalore -- All rights reserved -- </p>
-			</footer>
+            </footer>
 
 
-		</div> <!-- Wrapper -->
+		</main> <!-- Wrapper -->
 
 
 	
