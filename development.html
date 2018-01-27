@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>VIBS Development Solutions</title>
+    <title>Development Solutions - VIBS</title>
 
 	<!-- Bulma -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
@@ -67,6 +67,30 @@
             font-weight: 400;
             color: #3c3c3c;
         }
+
+        @media all and (max-width:968px){
+            div.card{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 5% 2.5%;
+            }
+
+            .icon-col{
+                order: 0;
+                flex: 1;
+            }
+
+            .solution-description{
+                order: 1;
+            }
+
+            .solution-icons {
+                font-size: 3rem;
+                height: 100px;
+                width: 100px;
+            }
+		}
 
 	</style>
 

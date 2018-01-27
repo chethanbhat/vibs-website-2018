@@ -450,13 +450,15 @@ div.jumbo .form-box{
 	
 footer{
     background: #0e1729;
-    padding: 30px;
+	padding: 30px;
+	text-align: left;
 }
 
 nav.flex-footer{
     display: flex;
     margin: 5%;
-    justify-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 footer .footer-logo {
@@ -473,11 +475,12 @@ footer .footer-section{
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0 3.5%;
+	flex: 1;
+	
 }
 
 .footer-section h3{
-    text-align: left;
+	width: 100%;
 }
 
 .footer-section ul {
@@ -515,8 +518,77 @@ footer .copyright{
     div.jumbo h1, div.jumbo h2, div.jumbo h3{
         animation: none;
         white-space: normal;
-    }
-
+	}
+		
+	div.jumbo h1, div.jumbo h2, div.jumbo h3{
+		animation: none;
+		white-space: normal;
+		padding: 5%;
+	}
+	
+	.main-content{
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	span.vibs{
+		font-size: 1.2em;
+		color: #040450;
+	}
+	
+	div.values, div.about, div.team{
+		margin: 100px auto;
+		
+	}
+	
+	div.value-row{
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	div.value{
+		flex: 1;
+		margin: 20px !important;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	
+	div.partner-row{
+		display: flex;
+	}
+	
+	div.partner{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin: 50px 0;
+		align-items: center;
+	}
+	
+	
+	div.social-links{
+		display: flex;
+	}
+	
+	div.social-links a.button{
+		flex: 1;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		padding: 20px;
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		background: #040450;
+		color: whitesmoke;
+	}
+	
+	div.social-links a.button:hover{
+		background: goldenrod;
+		color: #040450;
+	}
+		
 	.main-content .solutions{
 		flex-direction: column;
 	}
@@ -554,7 +626,9 @@ footer .copyright{
 		font-size:0.8rem;
 	  }
 
-
+	  footer .footer-section{
+		  flex: 1 1 50%;
+	  }
 }
 
 
@@ -606,7 +680,11 @@ footer .copyright{
 		
     footer .flex-footer{
         flex-direction: column;
-    }
+	}
+	
+	nav.flex-footer{
+		margin: 10%;
+	}
 }
 
 /* Animations */

@@ -43,6 +43,7 @@
 		div.value-row{
 			display: flex;
 			justify-content: space-around;
+			flex-wrap: wrap;
 		}
 
 		div.value{
@@ -81,6 +82,31 @@
 			background: goldenrod;
 			color: #0e1729;
 		}
+
+		@media all and (max-width:1024px){
+
+			div.value-row div.value{
+				flex: 1 1 25%;
+			}
+
+		}
+
+		@media all and (max-width:968px){
+			div.value-row{
+				flex-direction: column;
+			}
+		}
+
+		@media all and (max-width:500px) {
+			div.value-row, div.partner-row  {
+				flex-direction: column;
+			}
+
+			footer > *{
+				flex-direction: column;
+			}
+		}
+
 	</style>
 
 </head>
