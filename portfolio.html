@@ -1,122 +1,257 @@
-<!DOCTYPE HTML>
-<!--
-	Parallelism by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Design, Development, Digital Marketing Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design, Development, Digital Works Portfolio - VIBS</title>
 
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="vendor/html5up/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="vendor/html5up/css/noscript.css" /></noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!-- Bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
-	</head>
-	<body>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<div id="wrapper">
+    <link rel="stylesheet" href="stylesheets/main.css">
+	
+	<style>
+		
+		header.main-header{
+			background-image: url('https://images.unsplash.com/photo-1453749024858-4bca89bd9edc?ixlib=rb-0.3.5&s=c0848782d0e2bd2c1de013a53cbb5a64&auto=format&fit=crop&w=1007&q=80');
+        }
+        
+		div.jumbo h1, div.jumbo h2, div.jumbo h3, div.jumbo p{
+			animation: none;
+            white-space: normal;
+            color:whitesmoke;
+		}
 
-			<div id="main">
-				<div id="reel">
 
-					<!-- Header Item -->
+		.main-content{
+			width: 80%;
+            margin: 5% auto;
+            text-align: left;
+      }
 
-						<div id="header" class="item" data-width="800">
-							<div class="inner">
-								<h1>Vijaya Innovatve Business Solutions</h1>
-								<p>A portfolio of Design, Development and Digital Marketing Services</p>
+      .category-title{
+        font-size: 2rem;
+        text-align: center;
+        margin: 5% auto;
+      }
+
+      .portfolio-title{
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 5% auto;
+      }
+
+      .portfolio-weblink{
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 5% auto;
+      }
+
+      .portfolio-weblink a {
+        color: darkgoldenrod;
+      }
+
+      .portfolio-weblink a:hover {
+        text-decoration: underline;
+      }
+
+	</style>
+
+</head>
+<body>
+    <main>
+		
+		<header class="main-header">
+            <!-- Bulma Navigation -->
+            <nav class="container navbar is-transparent is-fixed-top navbar-transparent" id="main-nav" role="navigation" aria-label="main navigation">
+					<div class="navbar-brand">
+						<a class="navbar-item" href="https://vibs.co.in">
+							<img src="images/logo/logo-vibs-white-200.png" alt="Vijaya Innovative Business Solutions">
+						</a>
+						
+						<button class="button navbar-burger" data-target="main-navbar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div id="main-navbar" class="navbar-menu">
+						<div class="navbar-end">
+						<!-- navbar items -->
+						<a href="index.html" class="navbar-item">Home</a>
+						<a href="about.html" class="navbar-item">About</a>
+						
+	
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link">Solutions</a>
+								<div class="navbar-dropdown">
+									<a href="design.html" class="navbar-item is-active">Design</a>
+									<a href="development.html" class="navbar-item">Development</a>
+									<a href="digital-marketing.html" class="navbar-item">Digital</a>
+								</div>
 							</div>
-						</div>
+	
+							<a href="portfolio.html" class="navbar-item is-active">Portfolio</a>
+							<a href="contact.html" class="navbar-item">Contact</a>
+							<a href="https://www.facebook.com/vibsmangalore" class="navbar-item"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.twitter.com/vibsmangalore" class="navbar-item"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.linkedin.com/in/vibsmangalore" class="navbar-item"><i class="fa fa-linkedin"></i></a>
+						</div>                                
+					</div>
+				</nav> <!-- navigation -->
 
-					<!-- Thumb Items -->
+			<div class="jumbo">
+					<h1>We show Visual Story of your Brand to the World.</h1>
+					<h3>We have built a strong portfolio by working with several clients in various sectors.</h3>
+      </div>  <!-- Jumbo -->
+		</header> <!-- Header -->
+		<section class="main-content">
+                <h3 class="category-title">Design Portfolio</h3>
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-parent">
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/brochure-design/Ramdas-Brochure.png" alt="Brochure Design, Portfolio, VIBS">
+                            <p class="portfolio-title">Brochure Design</p>
+                        </article>
+                        <article class="tile is-child box">
+                          <img src="images/portfolio/bill-board-design/Ramdas-Bros-Billboard-Design.jpg" alt="Brochure Design, Portfolio, VIBS">
+                          <p class="portfolio-title">BillBoard Design</p>
+                      </article>
+                      <article class="tile is-child box">
+                          <img src="images/portfolio/label-design/Squash.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                          <p class="portfolio-title">Label Design</p>
+                      </article>
+                      <article class="tile is-child box">
+                          <img src="images/portfolio/packaging-design/Butter-Chakkuli-Design-for-Indya-foods-Australia.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                          <p class="portfolio-title">Packaging Design</p>
+                      </article>
+                      <article class="tile is-child box">
+                          <img src="images/portfolio/flyer-design/Marathe-Pamphlets.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                          <p class="portfolio-title">Flyer Design</p>
+                      </article>
+                    </div>
+                    <div class="tile is-vertical is-parent">
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/logo-design/Snackin.png" alt="Brochure Design, Portfolio, VIBS">
+                            <p class="portfolio-title">Logo Design</p>
+                        </article>
 
-						<article class="item thumb" data-width="282">
-							<h2>You really got me</h2>
-							<a href="images/delete-later/1.jpg" class="image"><img src="images/delete-later/1.jpg" alt=""></a>
-						</article>
+                      <article class="tile is-child box">
+                        <img src="images/portfolio/character-design/Character-Design.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                        <p class="portfolio-title">Character Design</p>
+                      </article>
+                      <article class="tile is-child box">
+                        <img src="images/portfolio/poster-design/Posters-Fortune-Chikki.jpg" alt="Label Design, Portfolio, VIBS, Vanasri">
+                        <p class="portfolio-title">Poster Design</p>
+                      </article>
+                      <article class="tile is-child box">
+                          <img src="images/portfolio/magazine-design/Shaktidarshan-Magazine.jpg" alt="Label Design, Portfolio, VIBS, Vanasri">
+                          <p class="portfolio-title">Magazine Design</p>
+                      </article>
+                      <article class="tile is-child box">
+                          <img src="images/portfolio/print-ads/Pon-Pon-News-Paper-Advertisement.jpg" alt="Label Design, Portfolio, VIBS, Vanasri">
+                          <p class="portfolio-title">Print Ads Design</p>
+                      </article>
+                  </div>
+                </div>
+                <h3 class="category-title">Web Design & Development</h3>
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-parent">
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/web-design/deccan-website.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                            <p class="portfolio-title">Deccan Plast Industries, Mangalore</p>
+                            <p class="portfolio-weblink"><a class="" href="https://deccanplast.com/">www.deccanplast.com</a></p>
+                        </article>
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/web-design/ganapathi-bhandarkar-website.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                            <p class="portfolio-title">Ganapathi Bhandarkar & Sons, Mangalore</p>
+                            <p class="portfolio-weblink"><a class="" href="https://ganapathibhandarkar.com/">www.ganapathibhandarkar.com</a></p>
+                        </article>
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/web-design/ponpon-website.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                            <p class="portfolio-title">Pon Pon Sweets, Mangalore</p>
+                            <p class="portfolio-weblink"><a class="" href="http://ponpon.co.in/">www.ponpon.co.in</a></p>
+                        </article>     
+                    </div>
+                    <div class="tile is-vertical is-parent">
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/web-design/kpmc-website.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                            <p class="portfolio-title">KPMC, Mangalore</p>
+                            <p class="portfolio-weblink"><a class="" href="https://kpmcqtr.com/">www.kpmcqtr.com</a></p>
+                        </article> 
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/web-design/adarsh-lodge-website.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                            <p class="portfolio-title">Hotel Adarsh Lodge, Mangalore</p>
+                            <p class="portfolio-weblink"><a class="" href="https://adarshlodge.com/">www.adarshlodge.com</a></p>
+                        </article>
+                        <article class="tile is-child box">
+                            <img src="images/portfolio/web-design/save-indian-cows-website.png" alt="Label Design, Portfolio, VIBS, Vanasri">
+                            <p class="portfolio-title">Save Indian Cows, Mangalore</p>
+                            <p class="portfolio-weblink"><a class="" href="https://saveindiancows.org/">www.saveindiancows.org</a></p>
+                        </article>       
+                    </div>
+                </div>
+		</section>
 
-						<article class="item thumb" data-width="384">
-							<h2>Ad Infinitum</h2>
-							<a href="images/delete-later/2.jpg" class="image"><img src="images/delete-later/2.jpg" alt=""></a>
-						</article>
+		<footer>  
+				<nav class="flex-footer">
+					<div class="footer-section footer-main-links">
+						<h3>VIBS</h3>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Solutions</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+	
+					</div>
+					<div class="footer-section footer-design-links">
+						<h3>Design</h3>
+						<ul>
+							<li><a href="#">Logo Design</a></li>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">UI/UX Design</a></li>
+							<li><a href="#">Print Design</a></li>
+							<li><a href="#">Branding</a></li>
+						</ul>
+					</div>
+					<div class="footer-section footer-dev-links">
+						<h3>Development</h3>
+						<ul>
+							<li><a href="#">Responsive Websites</a></li>
+							<li><a href="#">Web Application</a></li>
+							<li><a href="#">Mobile Application</a></li>
+							<li><a href="#">Ecommerce Development</a></li>
+							<li><a href="#">Wordpress Development</a></li>
+						</ul>
+					</div>
+					<div class="footer-section footer-marketing-links">
+						<h3>Digital Marketing</h3>
+						<ul>
+							<li><a href="#">Digital Strategy</a></li>
+							<li><a href="#">SEO</a></li>
+							<li><a href="#">Social Media Marketing</a></li>
+							<li><a href="#">PPC Ads</a></li>
+							<li><a href="#">Email Marketing</a></li>
+						</ul>
+					</div>
+                </nav>
+                <div class="footer-logo">
+						<img src="images/logo/logo-vibs-white-200.png" alt="Vijaya Innovative Business Solutions">
+                </div>
+				<p class="copyright">-- Copyright © 2018 VIBS, Mangalore -- All rights reserved -- </p>
+            </footer>
 
-						<article class="item thumb" data-width="274">
-							<h2>Different.</h2>
-							<a href="images/delete-later/3.jpg" class="image"><img src="images/delete-later/3.jpg" alt=""></a>
-						</article>
 
-						<article class="item thumb" data-width="282">
-							<h2>Elysium</h2>
-							<a href="images/delete-later/4.jpg" class="image"><img src="images/delete-later/4.jpg" alt=""></a>
-						</article>
-
-						<article class="item thumb" data-width="476">
-							<h2>Kingdom of the Wind</h2>
-							<a href="images/delete-later/5.jpg" class="image"><img src="images/delete-later/5.jpg" alt=""></a>
-						</article>
-
-						<article class="item thumb" data-width="232">
-							<h2>The Pursuit</h2>
-							<a href="images/delete-later/6.jpg" class="image"><img src="images/delete-later/6.jpg" alt=""></a>
-						</article>
-
-						<article class="item thumb" data-width="352">
-							<h2>Boundless</h2>
-							<a href="images/delete-later/7.jpg" class="image"><img src="images/delete-later/7.jpg" alt=""></a>
-						</article>
-
-						<article class="item thumb" data-width="348">
-							<h2>The Spectators</h2>
-							<a href="images/delete-later/8.jpg" class="image"><img src="images/delete-later/8.jpg" alt=""></a>
-						</article>
-
-					<!-- Filler Thumb Items (just for demonstration purposes) -->
-						<article class="item thumb" data-width="476"><h2>Kingdom of the Wind</h2><a href="images/delete-later/1.jpg" class="image"><img src="images/delete-later/1.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="232"><h2>The Pursuit</h2><a href="images/delete-later/2.jpg" class="image"><img src="images/delete-later/2.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="352"><h2>Boundless</h2><a href="images/delete-later/3.jpg" class="image"><img src="images/delete-later/3.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="348"><h2>The Spectators</h2><a href="images/delete-later/4.jpg" class="image"><img src="images/delete-later/4.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="282"><h2>You really got me</h2><a href="images/delete-later/5.jpg" class="image"><img src="images/delete-later/5.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="384"><h2>Ad Infinitum</h2><a href="images/delete-later/6.jpg" class="image"><img src="images/delete-later/6.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="274"><h2>Different.</h2><a href="images/delete-later/7.jpg" class="image"><img src="images/delete-later/7.jpg" alt=""></a></article>
-						<article class="item thumb" data-width="282"><h2>Elysium</h2><a href="images/delete-later/8.jpg" class="image"><img src="images/delete-later/8.jpg" alt=""></a></article>
-
-				</div>
-			</div>
-
-			<div id="footer">
-				<div class="left">
-					<p><strong>VIBS</strong> - Design | Development | Digital</p>
-				</div>
-				<div class="right">
-					<ul class="contact">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Vijaya Innovative Business Solutions</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="vendor/html5up/assets/js/jquery.min.js"></script>
-			<script src="vendor/html5up/assets/js/jquery.poptrox.min.js"></script>
-			<script src="vendor/html5up/assets/js/skel.min.js"></script>
-			<script src="vendor/html5up/assets/js/skel-viewport.min.js"></script>
-			<script src="vendor/html5up/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="vendor/html5up/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="vendor/html5up/assets/js/main.js"></script>
-
-	</body>
-</html>	
+		</main> <!-- Wrapper -->
+   <!-- Main Javascript -->     
+   <script src="scripts/main.js"></script>
+</body>
+</html>
